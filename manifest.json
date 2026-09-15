@@ -1,0 +1,22 @@
+{
+  "name": "JAY DWARKADHIS TRAVELS",
+  "short_name": "Dwarkadhis Travels",
+  "description": "24/7 Car Rental & Taxi Service in Bhuj, Kutch & Gujarat",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070c18",
+  "theme_color": "#0a111e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/fleet_banner.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/fleet_banner.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

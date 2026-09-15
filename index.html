@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>JAY DWARKADHIS TRAVELS | 24/7 Car Rental & Taxi Service in Bhuj, Kutch</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Jay Dwarkadhis Travels - Leading car rental & taxi provider in Bhuj, Kutch. 24/7 outstation cabs, Kutch Rann Utsav sightseeing, airport pickup/drop, corporate car hire, Dzire, Ertiga, Innova, Tempo Traveller across Gujarat & India.">
+  <meta name="keywords" content="Jay Dwarkadhis Travels, Taxi in Bhuj, Car Rental Bhuj, Kutch Sightseeing Taxi, Bhuj to Ahmedabad Cab, Bhuj Airport Taxi, Innova hire Bhuj, Tempo Traveller Bhuj, Outstation Taxi Gujarat">
+  <meta name="author" content="Jay Dwarkadhis Travels">
+  <meta name="theme-color" content="#0a111e">
+
+  <!-- Mobile & PWA Optimization -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Dwarkadhis Travels">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="HandheldFriendly" content="true">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/fleet_banner.jpg">
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JAY DWARKADHIS TRAVELS | 24/7 Taxi Service Bhuj, Kutch">
+  <meta property="og:description" content="Premier Car Rental & Chauffeur-Driven Taxi Services in Bhuj, Kutch & all over Gujarat. 24/7 Booking available.">
+  <meta property="og:image" content="assets/fleet_banner.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Cinzel:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- QR Code Library for offline generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Main Container -->
+  <div class="card-container">
+    
+    <!-- Top Utility Bar -->
+    <header class="top-nav">
+      <div class="live-status">
+        <span class="pulse-dot"></span>
+        <span class="status-text">24/7 Available for Bookings</span>
+      </div>
+      <button class="icon-btn" id="shareProfileBtn" title="Share Digital Card" aria-label="Share Digital Card">
+        <i class="fa-solid fa-share-nodes"></i>
+      </button>
+    </header>
+
+    <!-- Hero Profile Section -->
+    <section class="hero-card">
+      <div class="hero-banner">
+        <img src="assets/fleet_banner.jpg" alt="Jay Dwarkadhis Travels Fleet" class="hero-banner-img">
+        <div class="banner-overlay"></div>
+        <div class="verified-badge">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Verified Fleet & Drivers</span>
+        </div>
+      </div>
+
+      <div class="profile-header">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-inner" id="logoContainer">
+            <!-- Exact User Uploaded Brand Logo -->
+            <img src="../../brain/52fd3993-77d4-42b7-af96-db0a51f055f4/.user_uploaded/media_1789476022968.png" onerror="this.onerror=null; this.src='assets/logo.png';" alt="Jay Dwarkadhis Travels Exact Official Logo" class="brand-exact-logo">
+          </div>
+        </div>
+
+        <div class="business-info">
+          <h1 class="brand-title">JAY DWARKADHIS TRAVELS</h1>
+          <p class="brand-tagline">Leading Car Rental & Taxi Provider in Bhuj, Kutch</p>
+          <div class="location-pill">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Bhuj, Kutch, Gujarat (All India Services)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Stats & Trust Metrics -->
+      <div class="trust-metrics">
+        <div class="metric-item">
+          <span class="metric-num">24/7</span>
+          <span class="metric-lbl">Cab Booking</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">100%</span>
+          <span class="metric-lbl">AC & Clean Cabs</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-item">
+          <span class="metric-num">4.9 ★</span>
+          <span class="metric-lbl">Top Rated</span>
+        </div>
+      </div>
+
+      <!-- Quick Action Badges (4 Primary User Triggers) -->
+      <div class="primary-actions">
+        <!-- Call Button -->
+        <a href="tel:+919726156147" class="action-card btn-call" id="btnCallNow">
+          <div class="action-icon">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <div class="action-text">
+            <span class="action-title">Call Now</span>
+            <span class="action-sub">+91 9726156147</span>
+          </div>
+          <i class="fa-solid fa-arrow-right action-arrow"></i>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20inquire%20about%20taxi%20booking%20%2F%20car%20rental." target="_blank" rel="noopener" class="action-card btn-whatsapp" id="btnWhatsApp">
+          <div class="action-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="action-text">
+            <span class="action-title">WhatsApp</span>
+            <span class="action-sub">Instant Booking Chat</span>
+          </div>
+          <i class="fa-solid fa-arrow-right action-arrow"></i>
+        </a>
+
+        <!-- Direct Save Contact Button -->
+        <button class="action-card btn-save" id="btnSaveContact">
+          <div class="action-icon">
+            <i class="fa-solid fa-address-card"></i>
+          </div>
+          <div class="action-text">
+            <span class="action-title">Save Contact</span>
+            <span class="action-sub">1-Tap Direct to Phone</span>
+          </div>
+          <i class="fa-solid fa-download action-arrow"></i>
+        </button>
+
+        <!-- Google Review Button -->
+        <a href="https://g.page/r/CQsknx8aVuEzEBM/review" target="_blank" rel="noopener" class="action-card btn-review" id="btnGoogleReview">
+          <div class="action-icon">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="action-text">
+            <span class="action-title">Google Review</span>
+            <span class="action-sub">Rate Us 5 Stars ★★★★★</span>
+          </div>
+          <i class="fa-solid fa-star action-arrow"></i>
+        </a>
+      </div>
+
+      <!-- Secondary Quick Buttons -->
+      <div class="secondary-actions-grid">
+        <a href="tel:+917433030330" class="sec-btn">
+          <i class="fa-solid fa-phone"></i>
+          <span>Alt: 74330 30330</span>
+        </a>
+        <a href="#bookingSection" class="sec-btn highlight">
+          <i class="fa-solid fa-taxi"></i>
+          <span>Book a Cab</span>
+        </a>
+        <a href="#locationSection" class="sec-btn">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>Directions</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="content-section" id="aboutSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-shield-heart"></i>
+          <span>About Company</span>
+        </div>
+        <h2>Leading Taxi Provider in Bhuj, Kutch</h2>
+      </div>
+      <div class="about-card">
+        <p class="about-text">
+          <strong>JAY DWARKADHIS TRAVELS</strong> is the leading car rental service and taxi provider in Bhuj, Kutch, offering <strong>24/7 cab bookings</strong> across Gujarat and all over India. We specialize in outstation taxi service, local sightseeing tours, airport pickup & drop-off, corporate car rentals, and intercity travel.
+        </p>
+        <p class="about-text">
+          Our premium, well-maintained fleet includes <strong>Swift Dzire, Maruti Ertiga, Toyota Innova, Tempo Traveller, and Mini Bus</strong> to accommodate family trips, group travel, and luxury rides. Whether you need a chauffeur-driven car hire from Bhuj to Rajkot, Ahmedabad, Gandhidham, or Mandvi, we offer clean vehicles, experienced drivers, and transparent, affordable pricing.
+        </p>
+        <div class="badges-row">
+          <span class="pill-badge"><i class="fa-solid fa-clock"></i> 24/7 Service</span>
+          <span class="pill-badge"><i class="fa-solid fa-map"></i> All India Permit</span>
+          <span class="pill-badge"><i class="fa-solid fa-shield-check"></i> Safe & Sanitized</span>
+          <span class="pill-badge"><i class="fa-solid fa-tags"></i> Transparent Rates</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="content-section" id="servicesSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-car-side"></i>
+          <span>Our Services</span>
+        </div>
+        <h2>Comprehensive Travel Solutions</h2>
+        <p class="sub-text">Tailored taxi and car rental solutions for every journey</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-box gold">
+            <i class="fa-solid fa-road"></i>
+          </div>
+          <div class="service-content">
+            <h3>Outstation Taxi Service</h3>
+            <p>24/7 one-way and round-trip outstation cab bookings from Bhuj to Ahmedabad, Rajkot, Surat, Vadodara, Mumbai, and all over Gujarat & India.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> One-Way Drop & Round Trips</li>
+              <li><i class="fa-solid fa-check"></i> Well-Experienced Highway Drivers</li>
+              <li><i class="fa-solid fa-check"></i> Transparent Per-KM / Fixed Pricing</li>
+            </ul>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20an%20Outstation%20Taxi." target="_blank" class="service-cta">
+              <span>Book Outstation Cab</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card featured-service">
+          <div class="service-icon-box emerald">
+            <i class="fa-solid fa-mountain-sun"></i>
+          </div>
+          <div class="service-content">
+            <div class="service-media-thumb">
+              <img src="assets/kutch_rann.jpg" alt="Kutch Rann Utsav Sightseeing" class="service-img">
+              <span class="media-badge">Rann Utsav Special</span>
+            </div>
+            <h3>Kutch Sightseeing & Rann Utsav</h3>
+            <p>Exclusive customized tour packages covering White Rann of Kutch (Dhordo Tent City), Kalo Dungar, Mandvi Beach & Palace, Dholavira, and Bhuj Heritage.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Full Day & Multi-Day Kutch Tours</li>
+              <li><i class="fa-solid fa-check"></i> Local Tourist Spot Guidance</li>
+              <li><i class="fa-solid fa-check"></i> Family & Group Custom Itineraries</li>
+            </ul>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20inquire%20about%20Kutch%20Sightseeing%20%2F%20Rann%20Utsav%20Tour." target="_blank" class="service-cta">
+              <span>Explore Kutch Tours</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-box cyan">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <div class="service-content">
+            <h3>Airport Pickup & Drop-off</h3>
+            <p>Punctual, guaranteed on-time airport transfers for Bhuj Airport (BHJ), Kandla Airport, Ahmedabad (AMD), and Rajkot International Airport.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Flight Delay Tracking</li>
+              <li><i class="fa-solid fa-check"></i> Meet & Greet with Chauffeur</li>
+              <li><i class="fa-solid fa-check"></i> Zero Waiting Charges on Pickup</li>
+            </ul>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20need%20Airport%20Pickup%20%2F%20Drop%20service." target="_blank" class="service-cta">
+              <span>Book Airport Transfer</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-box purple">
+            <i class="fa-solid fa-building-user"></i>
+          </div>
+          <div class="service-content">
+            <h3>Corporate Car Rentals</h3>
+            <p>Executive chauffeur-driven vehicle fleet for corporate meetings, plant visits, VIP guests, and monthly contracts in Mundra, Kandla, Gandhidham & Bhuj.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Premium Chauffeurs & Clean Sedans/SUVs</li>
+              <li><i class="fa-solid fa-check"></i> GST Invoicing & Corporate Billing</li>
+              <li><i class="fa-solid fa-check"></i> Daily / Monthly Flexible Packages</li>
+            </ul>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20inquire%20for%20Corporate%20Car%20Rental." target="_blank" class="service-cta">
+              <span>Corporate Inquiry</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon-box orange">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <div class="service-content">
+            <h3>Intercity Travel (Gujarat)</h3>
+            <p>Seamless city-to-city taxi services connecting Bhuj with Rajkot, Ahmedabad, Gandhidham, Mandvi, Jamnagar, Junagadh, and Somnath.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> Doorstep Pickup & Drop</li>
+              <li><i class="fa-solid fa-check"></i> Dedicated Non-Stop Rides</li>
+              <li><i class="fa-solid fa-check"></i> Safe Night & Day Journeys</li>
+            </ul>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20Intercity%20Cab%20Booking." target="_blank" class="service-cta">
+              <span>Book Intercity Ride</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card featured-service">
+          <div class="service-icon-box blue">
+            <i class="fa-solid fa-van-shuttle"></i>
+          </div>
+          <div class="service-content">
+            <div class="service-media-thumb">
+              <img src="assets/tempo_bus.jpg" alt="Luxury Tempo Traveller and Mini Bus Group Tour" class="service-img">
+              <span class="media-badge">Group & Wedding Travel</span>
+            </div>
+            <h3>Group & Pilgrimage Tours</h3>
+            <p>Luxury Tempo Travellers and Mini Buses for wedding transportation, school/college excursions, family reunions, and Somnath-Dwarka pilgrimage tours.</p>
+            <ul class="service-points">
+              <li><i class="fa-solid fa-check"></i> 12, 17, 20 Seater Tempo Travellers</li>
+              <li><i class="fa-solid fa-check"></i> 25 to 35+ Seater Luxury Mini Buses</li>
+              <li><i class="fa-solid fa-check"></i> Pushback Seats & High Comfort AC</li>
+            </ul>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20need%20Tempo%20Traveller%20%2F%20Bus%20Booking." target="_blank" class="service-cta">
+              <span>Book Group Vehicle</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Showcase -->
+    <section class="content-section" id="fleetSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-truck-pickup"></i>
+          <span>Our Fleet</span>
+        </div>
+        <h2>Well-Maintained Premium Vehicles</h2>
+        <p class="sub-text">Spotless interiors, chilled AC, and verified professional drivers</p>
+      </div>
+
+      <!-- Mobile-Friendly Fleet Category Filter Pills -->
+      <div class="fleet-filter-bar">
+        <button class="filter-pill active" data-filter="all">All Vehicles</button>
+        <button class="filter-pill" data-filter="sedan">Sedans (4+1)</button>
+        <button class="filter-pill" data-filter="muv">MUV / SUV</button>
+        <button class="filter-pill" data-filter="group">Tempo & Bus</button>
+      </div>
+
+      <div class="fleet-grid">
+        <!-- Vehicle 1: Dzire -->
+        <div class="fleet-card" data-category="sedan">
+          <div class="fleet-badge">Sedan</div>
+          <div class="fleet-img-container">
+            <div class="vehicle-graphic dzire-graphic">
+              <i class="fa-solid fa-car"></i>
+            </div>
+          </div>
+          <div class="fleet-details">
+            <div class="fleet-header">
+              <h3>Maruti Swift Dzire</h3>
+              <span class="fleet-tag">Economy Comfort</span>
+            </div>
+            <div class="fleet-specs">
+              <span><i class="fa-solid fa-user-group"></i> 4+1 Seater</span>
+              <span><i class="fa-solid fa-suitcase"></i> 2 Bags</span>
+              <span><i class="fa-solid fa-snowflake"></i> Fully AC</span>
+              <span><i class="fa-solid fa-music"></i> Music Sys</span>
+            </div>
+            <p class="fleet-desc">Perfect for couples, solo business executives, small families, and quick intercity drops.</p>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20Maruti%20Swift%20Dzire." target="_blank" class="fleet-btn">
+              <span>Book Swift Dzire</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vehicle 2: Ertiga -->
+        <div class="fleet-card popular" data-category="muv">
+          <div class="fleet-badge hot">Most Popular</div>
+          <div class="fleet-img-container">
+            <div class="vehicle-graphic ertiga-graphic">
+              <i class="fa-solid fa-car-side"></i>
+            </div>
+          </div>
+          <div class="fleet-details">
+            <div class="fleet-header">
+              <h3>Maruti Ertiga</h3>
+              <span class="fleet-tag">Family MUV</span>
+            </div>
+            <div class="fleet-specs">
+              <span><i class="fa-solid fa-user-group"></i> 6+1 Seater</span>
+              <span><i class="fa-solid fa-suitcase"></i> 3 Bags</span>
+              <span><i class="fa-solid fa-snowflake"></i> Dual AC</span>
+              <span><i class="fa-solid fa-couch"></i> Reclining</span>
+            </div>
+            <p class="fleet-desc">Top choice for Kutch sightseeing, family vacations, and comfortable highway travel.</p>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20Maruti%20Ertiga." target="_blank" class="fleet-btn">
+              <span>Book Maruti Ertiga</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vehicle 3: Innova / Crysta -->
+        <div class="fleet-card" data-category="muv">
+          <div class="fleet-badge">Luxury SUV</div>
+          <div class="fleet-img-container">
+            <div class="vehicle-graphic innova-graphic">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+          </div>
+          <div class="fleet-details">
+            <div class="fleet-header">
+              <h3>Toyota Innova / Crysta</h3>
+              <span class="fleet-tag">Premium Ride</span>
+            </div>
+            <div class="fleet-specs">
+              <span><i class="fa-solid fa-user-group"></i> 6-7+1 Seater</span>
+              <span><i class="fa-solid fa-suitcase"></i> 4 Bags</span>
+              <span><i class="fa-solid fa-snowflake"></i> Climate AC</span>
+              <span><i class="fa-solid fa-gem"></i> VIP Luxury</span>
+            </div>
+            <p class="fleet-desc">Ultimate comfort, smooth suspension, and royal ride for long-distance & VIP journeys.</p>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20Toyota%20Innova%20Crysta." target="_blank" class="fleet-btn">
+              <span>Book Toyota Innova</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vehicle 4: Tempo Traveller -->
+        <div class="fleet-card" data-category="group">
+          <div class="fleet-badge">Group Tour</div>
+          <div class="fleet-img-container">
+            <div class="vehicle-graphic tempo-graphic">
+              <i class="fa-solid fa-van-shuttle"></i>
+            </div>
+          </div>
+          <div class="fleet-details">
+            <div class="fleet-header">
+              <h3>Force Tempo Traveller</h3>
+              <span class="fleet-tag">12 to 20 Seater</span>
+            </div>
+            <div class="fleet-specs">
+              <span><i class="fa-solid fa-user-group"></i> 12-20 Seats</span>
+              <span><i class="fa-solid fa-suitcase"></i> Big Boot</span>
+              <span><i class="fa-solid fa-snowflake"></i> Roof AC</span>
+              <span><i class="fa-solid fa-tv"></i> LED Screen</span>
+            </div>
+            <p class="fleet-desc">Spacious pushback seats, individual AC vents, and high roof for family & pilgrim groups.</p>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20Tempo%20Traveller." target="_blank" class="fleet-btn">
+              <span>Book Tempo Traveller</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Vehicle 5: Mini Bus -->
+        <div class="fleet-card" data-category="group">
+          <div class="fleet-badge">Coach</div>
+          <div class="fleet-img-container">
+            <div class="vehicle-graphic bus-graphic">
+              <i class="fa-solid fa-bus"></i>
+            </div>
+          </div>
+          <div class="fleet-details">
+            <div class="fleet-header">
+              <h3>Luxury Mini Bus & Coach</h3>
+              <span class="fleet-tag">25 - 35+ Seater</span>
+            </div>
+            <div class="fleet-specs">
+              <span><i class="fa-solid fa-user-group"></i> 25-35+ Seats</span>
+              <span><i class="fa-solid fa-suitcase"></i> Large Cargo</span>
+              <span><i class="fa-solid fa-snowflake"></i> Central AC</span>
+              <span><i class="fa-solid fa-volume-high"></i> Audio/Mic</span>
+            </div>
+            <p class="fleet-desc">Ideal for wedding guest logistics, educational excursions, and corporate events.</p>
+            <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20Luxury%20Mini%20Bus." target="_blank" class="fleet-btn">
+              <span>Book Mini Bus</span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Routes Guide -->
+    <section class="content-section" id="routesSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <span>Popular Routes</span>
+        </div>
+        <h2>Frequent Travel Routes from Bhuj</h2>
+        <p class="sub-text">Prompt pickup with transparent round-trip & drop-only pricing</p>
+      </div>
+
+      <div class="routes-container">
+        <div class="route-pill" onclick="selectRoute('Bhuj', 'White Rann of Kutch (Dhordo)')">
+          <div class="route-info">
+            <span class="route-title">Bhuj ⇄ White Rann of Kutch</span>
+            <span class="route-meta"><i class="fa-solid fa-road"></i> ~85 km | Rann Utsav & Kalo Dungar</span>
+          </div>
+          <button class="route-action-btn" title="Inquire Route">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <div class="route-pill" onclick="selectRoute('Bhuj', 'Ahmedabad / Gandhinagar')">
+          <div class="route-info">
+            <span class="route-title">Bhuj ⇄ Ahmedabad / Gandhinagar</span>
+            <span class="route-meta"><i class="fa-solid fa-road"></i> ~330 km | Express Highway Cab</span>
+          </div>
+          <button class="route-action-btn" title="Inquire Route">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <div class="route-pill" onclick="selectRoute('Bhuj', 'Rajkot')">
+          <div class="route-info">
+            <span class="route-title">Bhuj ⇄ Rajkot</span>
+            <span class="route-meta"><i class="fa-solid fa-road"></i> ~230 km | Intercity Taxi</span>
+          </div>
+          <button class="route-action-btn" title="Inquire Route">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <div class="route-pill" onclick="selectRoute('Bhuj', 'Mandvi Beach & Vijay Vilas Palace')">
+          <div class="route-info">
+            <span class="route-title">Bhuj ⇄ Mandvi Beach & Palace</span>
+            <span class="route-meta"><i class="fa-solid fa-road"></i> ~60 km | Beach Sightseeing</span>
+          </div>
+          <button class="route-action-btn" title="Inquire Route">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <div class="route-pill" onclick="selectRoute('Bhuj', 'Dwarka & Somnath')">
+          <div class="route-info">
+            <span class="route-title">Bhuj ⇄ Dwarka & Somnath</span>
+            <span class="route-meta"><i class="fa-solid fa-road"></i> ~380 km | Sacred Pilgrimage Tour</span>
+          </div>
+          <button class="route-action-btn" title="Inquire Route">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+
+        <div class="route-pill" onclick="selectRoute('Bhuj', 'Gandhidham / Kandla / Mundra Port')">
+          <div class="route-info">
+            <span class="route-title">Bhuj ⇄ Gandhidham / Mundra</span>
+            <span class="route-meta"><i class="fa-solid fa-road"></i> ~55-65 km | Corporate & Port Transfer</span>
+          </div>
+          <button class="route-action-btn" title="Inquire Route">
+            <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instant Booking / Fare Enquiry Form -->
+    <section class="content-section" id="bookingSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Instant Quote</span>
+        </div>
+        <h2>Book Your Cab in Seconds</h2>
+        <p class="sub-text">Fill details to receive instant quote & confirmation on WhatsApp</p>
+      </div>
+
+      <div class="booking-form-card">
+        <form id="cabBookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tripType"><i class="fa-solid fa-route"></i> Trip Type</label>
+              <select id="tripType" required>
+                <option value="Outstation Round Trip">Outstation Round Trip</option>
+                <option value="Outstation One-Way Drop">Outstation One-Way Drop</option>
+                <option value="Kutch Sightseeing / Rann Utsav">Kutch Sightseeing / Rann Utsav</option>
+                <option value="Airport Pickup / Drop">Airport Pickup / Drop</option>
+                <option value="Intercity One-Way">Intercity One-Way</option>
+                <option value="Corporate Car Rental">Corporate Car Rental</option>
+                <option value="Group Tour / Pilgrimage">Group Tour / Pilgrimage</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="vehicleChoice"><i class="fa-solid fa-car"></i> Select Vehicle</label>
+              <select id="vehicleChoice" required>
+                <option value="Maruti Swift Dzire (4+1)">Maruti Swift Dzire (4+1 Sedan)</option>
+                <option value="Maruti Ertiga (6+1)" selected>Maruti Ertiga (6+1 MUV)</option>
+                <option value="Toyota Innova / Crysta (6-7+1)">Toyota Innova / Crysta (6-7+1 SUV)</option>
+                <option value="Tempo Traveller (12-20 Seater)">Tempo Traveller (12-20 Seater)</option>
+                <option value="Luxury Mini Bus (25-35 Seater)">Luxury Mini Bus (25-35 Seater)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pickupCity"><i class="fa-solid fa-location-dot"></i> Pickup City / Location</label>
+              <input type="text" id="pickupCity" placeholder="e.g. Bhuj / Hotel / Airport" value="Bhuj" required>
+            </div>
+
+            <div class="form-group">
+              <label for="dropCity"><i class="fa-solid fa-flag-checkered"></i> Destination / Drop Location</label>
+              <input type="text" id="dropCity" placeholder="e.g. Ahmedabad / White Rann / Rajkot" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="travelDate"><i class="fa-solid fa-calendar-day"></i> Travel Date</label>
+              <input type="date" id="travelDate" required>
+            </div>
+
+            <div class="form-group">
+              <label for="passengerCount"><i class="fa-solid fa-users"></i> Number of Passengers</label>
+              <input type="number" id="passengerCount" min="1" max="50" value="4" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="custName"><i class="fa-solid fa-user"></i> Your Name</label>
+              <input type="text" id="custName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone"><i class="fa-solid fa-phone"></i> Contact Number</label>
+              <input type="tel" id="custPhone" placeholder="Enter your 10-digit mobile number" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tripNotes"><i class="fa-solid fa-comment-dots"></i> Special Requirements / Notes (Optional)</label>
+            <textarea id="tripNotes" rows="2" placeholder="e.g. Flight arrival time, multi-day itinerary, AC tempo requirement..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-booking-btn" id="btnSubmitBooking">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Get Instant WhatsApp Quote</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+
+
+    <!-- Social Media Connect -->
+    <section class="content-section" id="socialSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-globe"></i>
+          <span>Connect With Us</span>
+        </div>
+        <h2>Follow on Social Media</h2>
+        <p class="sub-text">Stay updated with latest travel photos, Kutch tour videos & offers</p>
+      </div>
+
+      <div class="social-links-grid">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/jay_dwarkadhistravelsofficial?stkn=NDUyZ3B2aGZ2Y2d0" target="_blank" rel="noopener" class="social-card insta">
+          <div class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="social-info">
+            <span class="social-title">Instagram</span>
+            <span class="social-handle">@jay_dwarkadhistravelsofficial</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/19ZRWp8BNz/" target="_blank" rel="noopener" class="social-card fb">
+          <div class="social-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="social-info">
+            <span class="social-title">Facebook</span>
+            <span class="social-handle">Jay Dwarkadhis Travels Official</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@JayDwarkadhisTravelsBhuj-u7l" target="_blank" rel="noopener" class="social-card yt">
+          <div class="social-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="social-info">
+            <span class="social-title">YouTube Channel</span>
+            <span class="social-handle">@JayDwarkadhisTravelsBhuj-u7l</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+
+        <!-- Google Page / Review -->
+        <a href="https://g.page/r/CQsknx8aVuEzEBM/review" target="_blank" rel="noopener" class="social-card google">
+          <div class="social-icon">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="social-info">
+            <span class="social-title">Google Business Profile</span>
+            <span class="social-handle">Jay Dwarkadhis Travels Bhuj</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square social-arrow"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Location & Contact Info -->
+    <section class="content-section" id="locationSection">
+      <div class="section-heading">
+        <div class="heading-tag">
+          <i class="fa-solid fa-map-pin"></i>
+          <span>Reach Us</span>
+        </div>
+        <h2>Office Location & Contacts</h2>
+      </div>
+
+      <div class="contact-details-card">
+        <div class="contact-row">
+          <div class="c-icon"><i class="fa-solid fa-building"></i></div>
+          <div class="c-text">
+            <strong>Head Office Address</strong>
+            <p id="officeAddressText">tri Mandir, B1/102 Syamjikrushna Varma Hights, Road, Relocation, Ravalvadi, Bhuj, Gujarat 370001</p>
+            <button class="copy-small-btn" onclick="copyAddress()"><i class="fa-solid fa-copy"></i> Copy Address</button>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="c-text">
+            <strong>Primary Contact / 24/7 Helpline</strong>
+            <p><a href="tel:+919726156147">+91 9726156147</a></p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="c-text">
+            <strong>Secondary Phone / WhatsApp</strong>
+            <p><a href="tel:+917433030330">+91 74330 30330</a></p>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="c-text">
+            <strong>Working Hours</strong>
+            <p>24 Hours / 7 Days a Week (Open on all holidays)</p>
+          </div>
+        </div>
+
+        <!-- Google Maps Navigation Button -->
+        <a href="https://maps.google.com/?q=tri+Mandir,+B1/102+Syamjikrushna+Varma+Hights,+Road,+Relocation,+Ravalvadi,+Bhuj,+Gujarat+370001" target="_blank" rel="noopener" class="maps-direct-btn">
+          <i class="fa-solid fa-diamond-turn-right"></i>
+          <span>Open in Google Maps / Navigate</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-card">
+      <div class="footer-brand">
+        <span class="gold-text">JAY DWARKADHIS TRAVELS</span>
+        <p>Premium Taxi Service & Car Rentals in Bhuj, Kutch</p>
+      </div>
+
+      <div class="footer-quick-save">
+        <button class="footer-vcard-btn" id="btnSaveContactFooter">
+          <i class="fa-solid fa-address-card"></i>
+          <span>Save Contact Card (.vcf)</span>
+        </button>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 JAY DWARKADHIS TRAVELS. All Rights Reserved.</p>
+        <p class="nfc-tagline">NFC Digital Smart Card & Web Portal</p>
+      </div>
+    </footer>
+
+  </div> <!-- End card-container -->
+
+  <!-- Floating Sticky Action Dock for Mobile -->
+  <nav class="sticky-dock">
+    <button class="dock-item call" id="btnCallDock">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call</span>
+    </button>
+    <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20a%20cab." target="_blank" class="dock-item whatsapp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <button class="dock-item save" id="btnSaveContactDock">
+      <i class="fa-solid fa-address-book"></i>
+      <span>Save Contact</span>
+    </button>
+    <a href="https://g.page/r/CQsknx8aVuEzEBM/review" target="_blank" class="dock-item review">
+      <i class="fa-solid fa-star"></i>
+      <span>Review</span>
+    </a>
+    <a href="#bookingSection" class="dock-item book">
+      <i class="fa-solid fa-taxi"></i>
+      <span>Book Cab</span>
+    </a>
+  </nav>
+
+  <!-- Share & QR Modal -->
+  <div class="modal-overlay" id="shareModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-qrcode gold-text"></i>
+          <h3>Scan & Share Digital Card</h3>
+        </div>
+        <button class="modal-close" id="closeShareModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="qr-wrapper">
+          <div id="qrcode"></div>
+          <p class="qr-caption">Scan with any phone camera to open card</p>
+        </div>
+
+        <div class="share-options">
+          <button class="share-btn share-native" id="btnNativeShare">
+            <i class="fa-solid fa-share-nodes"></i>
+            <span>Share Profile Link</span>
+          </button>
+          
+          <button class="share-btn share-wa" id="btnShareWhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Share via WhatsApp</span>
+          </button>
+
+          <button class="share-btn share-copy" id="btnCopyLink">
+            <i class="fa-solid fa-link"></i>
+            <span id="copyLinkText">Copy Card Link</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Call Options Bottom Sheet Modal -->
+  <div class="modal-overlay" id="callModal">
+    <div class="modal-card bottom-sheet">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-phone-volume gold-text"></i>
+          <h3>Call Helpline (24/7)</h3>
+        </div>
+        <button class="modal-close" id="closeCallModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-subtitle">Choose a number to call or chat instantly:</p>
+        <div class="call-options-list">
+          <a href="tel:+919726156147" class="call-option-card primary">
+            <div class="call-opt-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="call-opt-info">
+              <span class="call-opt-label">Primary 24/7 Helpline</span>
+              <span class="call-opt-num">+91 9726156147</span>
+            </div>
+            <span class="call-opt-tag">Call Direct</span>
+          </a>
+
+          <a href="tel:+917433030330" class="call-option-card secondary">
+            <div class="call-opt-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="call-opt-info">
+              <span class="call-opt-label">Secondary / Booking Desk</span>
+              <span class="call-opt-num">+91 74330 30330</span>
+            </div>
+            <span class="call-opt-tag">Call Direct</span>
+          </a>
+
+          <a href="https://wa.me/919726156147?text=Hello%20Jay%20Dwarkadhis%20Travels%2C%20I%20want%20to%20book%20a%20cab." target="_blank" class="call-option-card wa-opt">
+            <div class="call-opt-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="call-opt-info">
+              <span class="call-opt-label">WhatsApp Quick Chat</span>
+              <span class="call-opt-num">Instant Response</span>
+            </div>
+            <span class="call-opt-tag wa">Chat</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMessage">Action completed successfully</span>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
