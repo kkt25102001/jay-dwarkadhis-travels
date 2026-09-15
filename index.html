@@ -75,8 +75,83 @@
         <div class="avatar-wrapper">
           <div class="avatar-glow"></div>
           <div class="avatar-inner" id="logoContainer">
-            <!-- Exact User Uploaded Brand Logo -->
-            <img src="../../brain/52fd3993-77d4-42b7-af96-db0a51f055f4/.user_uploaded/media_1789476022968.png" onerror="this.onerror=null; this.src='assets/logo.png';" alt="Jay Dwarkadhis Travels Exact Official Logo" class="brand-exact-logo">
+            <!-- Primary Image with Auto-Fallback to HD Vector Logo -->
+            <img src="assets/logo.png" alt="Jay Dwarkadhis Travels Logo" class="brand-exact-logo" id="mainLogoImg" onerror="this.style.display='none'; document.getElementById('svgBrandLogo').style.display='block';">
+            
+            <!-- High-Definition Vector SVG (Zero External Dependency - Always Loads Live) -->
+            <svg id="svgBrandLogo" viewBox="0 0 380 160" class="brand-logo-svg" xmlns="http://www.w3.org/2000/svg" style="display:none; width: 100%; height: 100%;">
+              <defs>
+                <linearGradient id="dwarkaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#FFE066"/>
+                  <stop offset="40%" stop-color="#FFB703"/>
+                  <stop offset="80%" stop-color="#FB8500"/>
+                  <stop offset="100%" stop-color="#FFAA00"/>
+                </linearGradient>
+                <linearGradient id="leafGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#9ef01a"/>
+                  <stop offset="100%" stop-color="#38b000"/>
+                </linearGradient>
+              </defs>
+
+              <!-- Lord Krishna Hands, Flute (Bansuri) & Peacock Feather -->
+              <g transform="translate(10, 15)">
+                <!-- Peacock Feather (Mor Pankh) -->
+                <path d="M 62 14 C 48 8 36 22 45 38 C 52 48 70 46 78 34 C 84 24 74 12 62 14 Z" fill="#0077b6"/>
+                <ellipse cx="60" cy="26" rx="9" ry="13" fill="#0096c7"/>
+                <ellipse cx="60" cy="26" rx="5.5" ry="8" fill="#ffb703"/>
+                <ellipse cx="60" cy="26" rx="2.5" ry="4" fill="#03045e"/>
+
+                <!-- Flute Body -->
+                <path d="M 12 68 L 118 36 Q 122 35 124 39 L 122 43 L 15 74 Z" fill="url(#dwarkaGold)" stroke="#663600" stroke-width="0.8"/>
+                
+                <!-- Flute Holes -->
+                <circle cx="44" cy="60" r="2" fill="#381d00"/>
+                <circle cx="61" cy="55" r="2" fill="#381d00"/>
+                <circle cx="78" cy="50" r="2" fill="#381d00"/>
+                <circle cx="95" cy="45" r="2" fill="#381d00"/>
+
+                <!-- Red Tassels / Latkan -->
+                <path d="M 24 72 Q 18 88 26 98 M 28 71 Q 34 85 31 96 M 20 74 Q 16 86 22 95" stroke="#e63946" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <circle cx="26" cy="98" r="3" fill="#ffb703"/>
+                <circle cx="31" cy="96" r="3" fill="#ffb703"/>
+                <circle cx="22" cy="95" r="3" fill="#ffb703"/>
+
+                <!-- Ornate Hands -->
+                <g fill="#ffffff" stroke="#e63946" stroke-width="1.6">
+                  <!-- Left Hand -->
+                  <path d="M 36 54 C 32 44 48 40 56 50 C 52 57 44 58 36 54 Z" fill="#ffffff"/>
+                  <circle cx="40" cy="48" r="1.5" fill="#e63946"/>
+                  <circle cx="46" cy="46" r="1.5" fill="#e63946"/>
+                  <circle cx="52" cy="49" r="1.5" fill="#e63946"/>
+
+                  <!-- Right Hand -->
+                  <path d="M 82 41 C 78 31 94 28 102 38 C 99 45 91 46 82 41 Z" fill="#ffffff"/>
+                  <circle cx="86" cy="35" r="1.5" fill="#e63946"/>
+                  <circle cx="92" cy="33" r="1.5" fill="#e63946"/>
+                  <circle cx="98" cy="36" r="1.5" fill="#e63946"/>
+                </g>
+              </g>
+
+              <!-- JAY in Bold Magenta/Pink -->
+              <text x="172" y="48" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="28" font-weight="900" fill="#ff1361" letter-spacing="2">JAY</text>
+
+              <!-- Elegant Golden Arch Swoosh across Dwarkadhis -->
+              <path d="M 148 50 Q 235 28 325 48 Q 365 58 375 78" fill="none" stroke="url(#dwarkaGold)" stroke-width="3.8" stroke-linecap="round"/>
+
+              <!-- Auspicious Green Leaves -->
+              <!-- Top leaf on D -->
+              <path d="M 136 54 C 126 48 130 38 142 42 C 148 50 140 58 136 54 Z" fill="url(#leafGreen)"/>
+              <!-- Bottom leaf on D -->
+              <path d="M 98 94 C 94 84 106 78 114 86 C 113 95 102 99 98 94 Z" fill="url(#leafGreen)"/>
+              <!-- Leaf after TRAVELS -->
+              <path d="M 314 112 C 324 104 334 112 328 120 C 318 126 312 118 314 112 Z" fill="url(#leafGreen)"/>
+
+              <!-- Dwarkadhis in Elegant Golden Yellow Serif -->
+              <text x="80" y="98" font-family="'Cinzel', 'Playfair Display', Georgia, serif" font-size="46" font-weight="900" fill="url(#dwarkaGold)" letter-spacing="-0.5">Dwarkadhis</text>
+
+              <!-- TRAVELS in Vivid Electric Cyan -->
+              <text x="145" y="130" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="29" font-weight="900" fill="#00b4d8" letter-spacing="7">TRAVELS</text>
+            </svg>
           </div>
         </div>
 
