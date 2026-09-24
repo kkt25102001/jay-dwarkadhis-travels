@@ -152,6 +152,50 @@ function selectRoute(pickup, drop) {
 }
 
 /**
+ * Quick Select Destination from Visited Places Sightseeing List
+ */
+function selectDestination(destination, tripType = 'Kutch Sightseeing / Rann Utsav', defaultVehicle = '') {
+  const pickupInput = document.getElementById('pickupCity');
+  const dropInput = document.getElementById('dropCity');
+  const tripTypeSelect = document.getElementById('tripType');
+  const vehicleSelect = document.getElementById('vehicleChoice');
+  const bookingSection = document.getElementById('bookingSection');
+
+  if (pickupInput && dropInput && bookingSection) {
+    if (!pickupInput.value) pickupInput.value = 'Bhuj';
+    dropInput.value = destination;
+
+    if (tripTypeSelect && tripType) {
+      tripTypeSelect.value = tripType;
+    }
+
+    if (vehicleSelect && defaultVehicle) {
+      for (let option of vehicleSelect.options) {
+        if (option.value.includes(defaultVehicle.split(' ')[0]) || option.text.includes(defaultVehicle.split(' ')[0])) {
+          vehicleSelect.value = option.value;
+          break;
+        }
+      }
+    }
+
+    bookingSection.scrollIntoView({ behavior: 'smooth' });
+
+    // Highlight form
+    const formCard = document.querySelector('.booking-form-card');
+    if (formCard) {
+      formCard.style.borderColor = 'var(--gold-primary)';
+      formCard.style.boxShadow = '0 0 25px rgba(245, 184, 0, 0.45)';
+      setTimeout(() => {
+        formCard.style.borderColor = 'var(--border-glass)';
+        formCard.style.boxShadow = 'none';
+      }, 2200);
+    }
+
+    showToast(`🏰 Destination Selected: ${destination}`);
+  }
+}
+
+/**
  * Copy Office Address to Clipboard
  */
 function copyAddress() {
@@ -310,6 +354,32 @@ function initFleetFilters() {
 }
 
 /**
+ * Sightseeing Destination Filter Handler
+ */
+function initDestinationFilters() {
+  const filterPills = document.querySelectorAll('.dest-filter-pill');
+  const destinationCards = document.querySelectorAll('.destination-card');
+
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      const filterValue = pill.getAttribute('data-filter');
+
+      destinationCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filterValue === 'all' || category === filterValue) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+}
+
+/**
  * Setup All Event Listeners
  */
 function setupEventListeners() {
@@ -328,6 +398,9 @@ function setupEventListeners() {
 
   // Fleet Filter Tabs
   initFleetFilters();
+
+  // Sightseeing Destinations Filter Tabs
+  initDestinationFilters();
 
   // Booking Form Submit
   document.getElementById('cabBookingForm')?.addEventListener('submit', handleBookingSubmit);
@@ -352,4 +425,5 @@ function setupEventListeners() {
     }
   });
 }
+
 
