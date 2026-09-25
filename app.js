@@ -35,7 +35,7 @@ function downloadVCard() {
     title: "Car Rental & Taxi Provider in Bhuj, Kutch",
     phonePrimary: "+919726156147",
     phoneSecondary: "+917433030330",
-    street: "tri Mandir, B1/102 Syamjikrushna Varma Hights, Road, Relocation, Ravalvadi",
+    street: "B1/102 Syamjikrushna Varma Heights, Road, Relocation, Ravalvadi",
     city: "Bhuj",
     state: "Gujarat",
     postalCode: "370001",
@@ -200,7 +200,7 @@ function selectDestination(destination, tripType = 'Kutch Sightseeing / Rann Uts
  */
 function copyAddress() {
   const addressText = document.getElementById('officeAddressText')?.innerText || 
-    'tri Mandir, B1/102 Syamjikrushna Varma Hights, Road, Relocation, Ravalvadi, Bhuj, Gujarat 370001';
+    'B1/102 Syamjikrushna Varma Heights, Road, Relocation, Ravalvadi, Bhuj, Gujarat 370001';
 
   navigator.clipboard.writeText(addressText).then(() => {
     showToast('📋 Office address copied to clipboard!');
