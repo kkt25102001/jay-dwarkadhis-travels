@@ -2157,6 +2157,13 @@ body {
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-primary);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.map-header-badge:hover {
+  background: rgba(245, 184, 0, 0.12);
+  color: var(--gold-light);
 }
 
 .map-frame-container {
